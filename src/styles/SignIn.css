@@ -1,0 +1,30 @@
+.signIn{
+    color: #4445E7;
+}
+.signIn__header > h1{
+    font-size: 24px;
+    margin: 20px;
+}
+.signIn__body{
+    display:grid;
+    place-items: center;
+    
+}
+.main__image > img{
+    height: 360px;
+    width: 360px;
+    object-fit: contain;
+}
+.signIn__btn > img{
+    height:50px;
+    width: 250px;
+    object-fit: contain;
+}
+@media only screen and (max-width: 600px) {
+    .signIn__body{
+      margin-top:100px;
+    }
+    .signIn__btn{
+        margin-top:50px;
+    }
+  }

@@ -1,10 +1,11 @@
 import React from 'react'
 import ScanScreen from './pages/ScanScreen'
+import SignIn from './pages/SignIn'
 
 function App() {
     return (
         <div className="app">
-            <ScanScreen/>
+            <SignIn/>
         </div>
     )
 }
