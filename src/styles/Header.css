@@ -1,0 +1,11 @@
+.header{
+    width: 100%;
+    color: #7300FB;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.header__left>h1{
+    font-size:24px;
+    font-weight:600;
+}
