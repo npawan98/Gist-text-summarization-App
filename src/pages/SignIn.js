@@ -2,8 +2,12 @@ import React from 'react'
 import '../styles/SignIn.css'
 import mainImage from '../assets/main.webp'
 import signinBtn from '../assets/btn_google_signin.png'
+import { auth, provider } from '../Firebase'
 
 function SignIn() {
+    const signIn = () =>{
+        auth.signInWithPopup(provider).catch(alert);
+    }
     return (
         <div className="signIn">
             <div className="signIn__header">
@@ -15,7 +19,7 @@ function SignIn() {
                     <img src={mainImage} />
                 </div>
                 <div className="signIn__btn">
-                    <img src={signinBtn} />
+                    <img src={signinBtn} onClick={signIn}/>
                 </div>
 
             </div>
