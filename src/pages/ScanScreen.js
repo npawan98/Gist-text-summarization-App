@@ -7,7 +7,6 @@ import 'filepond/dist/filepond.min.css';
 import '../styles/ScanScreen.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from '../components/Header';
-// import { Button } from '@material-ui/core';
 import Button from '../components/Button';
 
 registerPlugin(FilePondPluginImagePreview);
@@ -159,7 +158,7 @@ class ScanScreen extends React.Component {
                                     : this.state.ocrText?.length === 0 ? "Please Upload a File or Scan Image" : this.state.ocrText}</p>
                             </div>
                         </div>
-                        {/* added */}
+                        {/* added for summarisation created a dummy form to send data */}
 
                         <div className="form-group">
 
@@ -173,16 +172,13 @@ class ScanScreen extends React.Component {
                             </div>
                             <span></span>
                             <div className="input-group">
-                                <input id="num" type="numbers" className="form-control" name="num" value={this.state.num} placeholder="select from 1-10 (length of summary)" max="10" onChange={this.numbersub} required/>
+                                <input id="num" type="numbers" className="form-control" name="num" value={this.state.num} placeholder="select from 1-10 (length of summary)" max="10" onChange={this.numbersub} required />
                             </div>
                             <div className="getSummerybtn" onClick={this.onSubmitt}>
-                                {/* <Button variant="contained" color="secondary" onClick={this.onSubmitt}>
-                                        Get Summery
-                                </Button> */}
-                                <Button name="Get Summary" txtColor="#ffffff" bgColor = "#828aed" />
+                                <Button name="Get Summary" txtColor="#ffffff" bgColor="#828aed" />
                             </div>
 
-                           
+
                             {/* summery */}
                             <div className="card">
                                 <h5 className="card-header">
@@ -202,7 +198,7 @@ class ScanScreen extends React.Component {
                             </div>
 
                         </div>
-
+                        {/* summarisation ends */}
                         <div className="ocr-text">
 
                         </div>

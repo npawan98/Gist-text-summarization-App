@@ -11,7 +11,7 @@ function Routes() {
                     <Route path="/help">
                         {/* news */}
                         {/* <Home /> */}
-                        <Help/>
+                        <Help />
 
                     </Route>
 

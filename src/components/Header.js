@@ -51,7 +51,7 @@ function Header() {
             onKeyDown={toggleDrawer(anchor, false)}
         >
             <List>
-                <h4 style={{color:"#7300FB",padding:"5px"}}>hi {user?.displayName} !</h4>
+                <h4 style={{ color: "#7300FB", padding: "5px", fontWeight: "600", fontSize: "22px", marginLeft: "10px" }}>hi {user?.displayName} !</h4>
                 <Box
                     display="flex"
                     onClick={() => {

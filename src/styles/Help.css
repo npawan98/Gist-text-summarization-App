@@ -6,9 +6,7 @@
     display:grid;
     place-items: center;
 }
-.body__image{
-    
-}
+
 .body__image > img{
     height: 250px;
     width: 250px;

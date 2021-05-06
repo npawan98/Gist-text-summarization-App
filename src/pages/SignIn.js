@@ -5,7 +5,7 @@ import signinBtn from '../assets/btn_google_signin.png'
 import { auth, provider } from '../Firebase'
 
 function SignIn() {
-    const signIn = () =>{
+    const signIn = () => {
         auth.signInWithPopup(provider).catch(alert);
     }
     return (
@@ -19,7 +19,7 @@ function SignIn() {
                     <img src={mainImage} />
                 </div>
                 <div className="signIn__btn">
-                    <img src={signinBtn} onClick={signIn}/>
+                    <img src={signinBtn} onClick={signIn} />
                 </div>
 
             </div>
