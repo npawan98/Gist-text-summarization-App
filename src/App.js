@@ -5,8 +5,8 @@ import {useAuthState} from 'react-firebase-hooks/auth';
 import {db,auth} from './Firebase'
 
 function App() {
-    // const [user] = useAuthState(auth);
-    const [user]="hey";
+    const [user] = useAuthState(auth);
+    // const [user]="hey";
     // console.log(user?.photoURL);
     // return (
     //     <div className="app">

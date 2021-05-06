@@ -15,4 +15,10 @@
 .header__left>h1{
     font-size:24px;
     font-weight:600;
+    transform:translateY(5px);
+}
+.header__left{
+    display:flex;
+    align-items:center;
+    transform:translateX(-20px);
 }
