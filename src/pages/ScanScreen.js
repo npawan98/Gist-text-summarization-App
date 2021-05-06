@@ -183,7 +183,7 @@ class ScanScreen extends React.Component {
                                 <h5 className="card-header">
                                     <div style={{ margin: "1%", textAlign: "left" }} className="row">
                                         <div className="col-md-12">
-                                            <center><i className={"fas fa-sync fa-2x " + (this.state.isProcessing ? "fa-spin" : "")}></i> <span className="status-text">{this.state.isProcessing ? `Processing Image ( ${this.state.pctg} % )` : "Summarised Text"} </span></center>
+                                            <center><span className="status-text">Summarised text </span></center>
                                         </div>
 
                                     </div>
