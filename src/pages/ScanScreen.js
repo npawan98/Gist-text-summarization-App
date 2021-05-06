@@ -173,7 +173,7 @@ class ScanScreen extends React.Component {
                             </div>
                             <span></span>
                             <div className="input-group">
-                                <input id="num" type="numbers" className="form-control" name="num" value={this.state.num} placeholder="select from 1-10" max="10" onChange={this.numbersub} required/>
+                                <input id="num" type="numbers" className="form-control" name="num" value={this.state.num} placeholder="select from 1-10 (length of summary)" max="10" onChange={this.numbersub} required/>
                             </div>
                             <div className="getSummerybtn" onClick={this.onSubmitt}>
                                 {/* <Button variant="contained" color="secondary" onClick={this.onSubmitt}>
