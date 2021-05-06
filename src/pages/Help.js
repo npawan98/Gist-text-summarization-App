@@ -16,11 +16,9 @@ function Help() {
                <div className="body__body">
                    <div className="body__image">
                         <img src={HelpImage}/>
-                   </div>
-                   <div className="body__text">
-                       <h6>-Scan / select a image from you device.</h6>
+                        <h6>-Scan / select a image from you device.</h6>
                        <h6>-wait for image to process OCR</h6>
-                       <h6>-nter the length of the summary you want(in lines)</h6>
+                       <h6>-enter the length of the summary you want(in lines)</h6>
                        <h6>-Then click on Get Summary to generate Summary</h6>
                    </div>
                     

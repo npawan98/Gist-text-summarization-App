@@ -6,8 +6,8 @@ import {db,auth} from './Firebase'
 import Routes from './routes/Routes';
 
 function App() {
-    // const [user] = useAuthState(auth);
-    const [user]="hey";
+    const [user] = useAuthState(auth);
+    // const [user]="hey";
     // console.log(user?.photoURL);
     // return (
     //     <div className="app">
