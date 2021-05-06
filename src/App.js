@@ -3,6 +3,7 @@ import ScanScreen from './pages/ScanScreen'
 import SignIn from './pages/SignIn'
 import {useAuthState} from 'react-firebase-hooks/auth';
 import {db,auth} from './Firebase'
+import Routes from './routes/Routes';
 
 function App() {
     const [user] = useAuthState(auth);
@@ -14,7 +15,7 @@ function App() {
     //     </div>
     // )
     if(!user) return <SignIn/>;
-  return <ScanScreen/>
+  return <Routes/>
 }
 
 export default App

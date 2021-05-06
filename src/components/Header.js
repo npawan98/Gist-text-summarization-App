@@ -9,7 +9,7 @@ import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 import { AppBar, Box, Button, Divider, Drawer, IconButton, List, ListItem, ListItemIcon, ListItemText, makeStyles, Toolbar, Typography, useTheme } from '@material-ui/core'
 import MenuIcon from '@material-ui/icons/Menu';
 import HomeIcon from '@material-ui/icons/Home';
-import AlbumIcon from '@material-ui/icons/Album';
+import HelpOutlineIcon from '@material-ui/icons/HelpOutline';
 import clsx from 'clsx';
 
 // app drawer
@@ -51,6 +51,7 @@ function Header() {
             onKeyDown={toggleDrawer(anchor, false)}
         >
             <List>
+                <h4 style={{color:"#7300FB",padding:"5px"}}>hi {user?.displayName} !</h4>
                 <Box
                     display="flex"
                     onClick={() => {
@@ -77,13 +78,13 @@ function Header() {
                     <ListItem
                         button
                         onClick={() => {
-                            window.location = "/Podcasts";
+                            window.location = "/help";
                         }}
                     >
                         <ListItemIcon>
-                            <AlbumIcon />
+                            <HelpOutlineIcon />
                         </ListItemIcon>
-                        <ListItemText primary={"Podcasts"} />
+                        <ListItemText primary={"Help"} />
                     </ListItem>
 
                     <ListItem

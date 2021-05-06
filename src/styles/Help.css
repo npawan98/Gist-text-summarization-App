@@ -1,0 +1,15 @@
+.help__body{
+    margin-top:100px;
+}
+.body__body{
+    display:grid;
+    place-items: center;
+}
+.body__image > img{
+    height: 250px;
+    width: 250px;
+    object-fit: contain;
+}
+.body__text > h6{
+    opacity: 60%;
+}
