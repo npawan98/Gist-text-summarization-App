@@ -1,9 +1,10 @@
 .App {
-  background: url(../../src/assets/background.svg);
+  /* background: url(../../src/assets/background.svg); */
+  background:white;
   text-align: center;
   display: flex;
   flex-direction: column;
-  height: 90vh;
+  height: 100vh;
 }
 
 .App-logo {
@@ -41,7 +42,7 @@
   /* background: chartreuse; */
   display: flex;
   /* flex: 0.1; */
-  margin:15px;
+  /* margin:15px; */
   
 }
 .scan__header >h1{
@@ -52,7 +53,7 @@
   position: relative;
   flex: 1;
   /* background: #C4C4C4; */
-  margin-top: 0 !important;
+  margin-top: 100px !important;
   margin: 15px;
   height: 270px;
   align-items: center;
@@ -112,3 +113,11 @@ color: white;
 /* .container{
   margin-top: 150px;
 } */
+
+.form-group{
+  margin-top:15px;
+}
+.getSummerybtn{
+  margin-top:75px;
+  margin-bottom:15px;
+}

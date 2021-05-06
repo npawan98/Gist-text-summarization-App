@@ -7,6 +7,8 @@ import 'filepond/dist/filepond.min.css';
 import '../styles/ScanScreen.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from '../components/Header';
+// import { Button } from '@material-ui/core';
+import Button from '../components/Button';
 
 registerPlugin(FilePondPluginImagePreview);
 
@@ -171,13 +173,16 @@ class ScanScreen extends React.Component {
                             </div>
                             <span></span>
                             <div className="input-group">
-                                <input id="num" type="numbers" className="form-control" name="num" value={this.state.num} placeholder="select from 1-10" max="10" onChange={this.numbersub} />
+                                <input id="num" type="numbers" className="form-control" name="num" value={this.state.num} placeholder="select from 1-10" max="10" onChange={this.numbersub} required/>
+                            </div>
+                            <div className="getSummerybtn">
+                                {/* <Button variant="contained" color="secondary" onClick={this.onSubmitt}>
+                                        Get Summery
+                                </Button> */}
+                                <Button name="Get Summary" txtColor="#ffffff" bgColor = "#828aed"/>
                             </div>
 
-                            <button style={{ backgroundColor: '#d35400' }} onClick={this.onSubmitt} >SUBMIT</button>
-
-
-
+                           
                             {/* summery */}
                             <div className="card">
                                 <h5 className="card-header">

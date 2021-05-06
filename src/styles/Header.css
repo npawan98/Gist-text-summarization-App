@@ -1,9 +1,16 @@
 .header{
+    margin: 0 !important;
     width: 100%;
     color: #7300FB;
     display: flex;
     align-items: center;
     justify-content:space-between;
+    background:#ffffff;
+    box-shadow: 0px 8px 8px -6px rgba(0,0,0,.3);
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    padding: 15px;
 }
 .header__left>h1{
     font-size:24px;
